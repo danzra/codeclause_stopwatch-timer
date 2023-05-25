@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #8a8490;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+      padding: 50px;
+      font-size: 72px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30vh;
+    }
+
+    .button {
+      font-size: 44px;
+      padding: 16px 32px;
+      margin: 10px;
+      background-color: #cf8a8a;
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #87c6c2;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>Timer and Stopwatch</h1>
+
+  <div class="button-container">
+    <button class="button" onclick="redirectToStopwatch()">Stopwatch</button>
+    <button class="button" onclick="redirectToTimer()">Timer</button>
+  </div>
+
+  <script>
+    function redirectToStopwatch() {
+      window.location.href = "index.html";
+    }
+
+    function redirectToTimer() {
+      window.location.href = "index2.html";
+    }
+  </script>
+</body>
+</html>
